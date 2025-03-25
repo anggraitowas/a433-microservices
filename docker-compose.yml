@@ -1,0 +1,25 @@
+version: "2.4"
+
+services:
+  item-db:
+    image: mongo:3
+    container_name: item-db
+    restart: always
+    volumes:
+      - app-db:/data/db
+
+  item-app:
+    image: anggraitowas/item-app:v1
+    container_name: item-app
+    restart: always
+    depends_on:
+      - item-db
+    ports:
+      - "80:8080"
+    environment:
+      NODE_ENV: production
+      DB_HOST: item-db
+
+volumes:
+  app-db:
+

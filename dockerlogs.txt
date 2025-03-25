@@ -1,0 +1,254 @@
+item-app  | 
+item-app  | > docker-software-delivery@1.0.0 start /app
+item-app  | > node ./bin/www
+item-app  | 
+item-app  | NODE_ENV: production
+item-app  | Connected to database
+item-app  | 
+item-app  | > docker-software-delivery@1.0.0 start /app
+item-app  | > node ./bin/www
+item-app  | 
+item-app  | NODE_ENV: production
+item-app  | /app/node_modules/mongodb/lib/mongo_client.js:421
+item-app  |           throw err
+item-app  |           ^
+item-app  | 
+item-app  | AssertionError [ERR_ASSERTION]: null == Error [MongoError]: failed to connect to server [item-db:27017] on first connect [Error: connect ECONNREFUSED 172.19.0.2:27017
+item-app  |     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+item-app  |   name: 'MongoError'
+item-app  | }]
+item-app  |     at Pool.<anonymous> (/app/node_modules/mongodb-core/lib/topologies/server.js:336:35)
+item-app  |     at Pool.emit (events.js:400:28)
+item-app  |     at Connection.<anonymous> (/app/node_modules/mongodb-core/lib/connection/pool.js:280:12)
+item-app  |     at Object.onceWrapper (events.js:520:26)
+item-app  |     at Connection.emit (e...
+item-app  |     at /app/app.js:24:10
+item-app  |     at connectCallback (/app/node_modules/mongodb/lib/mongo_client.js:527:5)
+item-app  |     at /app/node_modules/mongodb/lib/mongo_client.js:418:11
+item-app  |     at processTicksAndRejections (internal/process/task_queues.js:77:11) {
+item-app  |   generatedMessage: true,
+item-app  |   code: 'ERR_ASSERTION',
+item-app  |   actual: null,
+item-app  |   expected: Error [MongoError]: failed to connect to server [item-db:27017] on first connect [Error: connect ECONNREFUSED 172.19.0.2:27017
+item-app  |       at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+item-app  |     name: 'MongoError'
+item-app  |   }]
+item-app  |       at Pool.<anonymous> (/app/node_modules/mongodb-core/lib/topologies/server.js:336:35)
+item-app  |       at Pool.emit (events.js:400:28)
+item-app  |       at Connection.<anonymous> (/app/node_modules/mongodb-core/lib/connection/pool.js:280:12)
+item-app  |       at Object.onceWrapper (events.js:520:26)
+item-app  |       at Connection.emit (events.js:400:28)
+item-app  |       at Socket.<anonymous> (/app/node_modules/mongodb-core/lib/connection/connection.js:189:49)
+item-app  |       at Object.onceWrapper (events.js:520:26)
+item-app  |       at Socket.emit (events.js:400:28)
+item-app  |       at emitErrorNT (internal/streams/destroy.js:106:8)
+item-app  |       at emitErrorCloseNT (internal/streams/destroy.js:74:3),
+item-app  |   operator: '=='
+item-app  | }
+item-app  | npm ERR! code ELIFECYCLE
+item-app  | npm ERR! errno 1
+item-app  | npm ERR! docker-software-delivery@1.0.0 start: `node ./bin/www`
+item-app  | npm ERR! Exit status 1
+item-app  | npm ERR! 
+item-app  | npm ERR! Failed at the docker-software-delivery@1.0.0 start script.
+item-app  | npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+item-app  | 
+item-app  | npm ERR! A complete log of this run can be found in:
+item-app  | npm ERR!     /root/.npm/_logs/2025-03-24T23_51_26_945Z-debug.log
+item-app  | 
+item-app  | > docker-software-delivery@1.0.0 start /app
+item-app  | > node ./bin/www
+item-app  | 
+item-app  | NODE_ENV: production
+item-app  | Connected to database
+item-app  | [0mGET / [32m200 [0m182.710 ms - 785[0m
+item-app  | [0mGET /javascripts/dist/dist.min.js [32m200 [0m14.043 ms - 186999[0m
+item-app  | [0mGET /stylesheets/style.css [32m200 [0m21.378 ms - 519[0m
+item-app  | [0mGET /api [32m200 [0m3.574 ms - 2[0m
+item-app  | [0mGET /favicon.ico [33m404 [0m6.768 ms - 270[0m
+item-app  | [0mPOST /api [32m201 [0m36.364 ms - 51[0m
+item-app  | [0mGET / [36m304 [0m0.968 ms - -[0m
+item-app  | [0mGET /javascripts/dist/dist.min.js [36m304 [0m0.575 ms - -[0m
+item-app  | [0mGET /stylesheets/style.css [36m304 [0m1.874 ms - -[0m
+item-app  | [0mGET /api [32m200 [0m2.958 ms - 53[0m
+item-app  | 
+item-app  | > docker-software-delivery@1.0.0 start /app
+item-app  | > node ./bin/www
+item-app  | 
+item-app  | NODE_ENV: production
+item-app  | /app/node_modules/mongodb/lib/mongo_client.js:421
+item-app  |           throw err
+item-app  |           ^
+item-app  | 
+item-app  | AssertionError [ERR_ASSERTION]: null == Error [MongoError]: failed to connect to server [item-db:27017] on first connect [Error: connect ECONNREFUSED 172.19.0.3:27017
+item-app  |     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+item-app  |   name: 'MongoError'
+item-app  | }]
+item-app  |     at Pool.<anonymous> (/app/node_modules/mongodb-core/lib/topologies/server.js:336:35)
+item-app  |     at Pool.emit (events.js:400:28)
+item-app  |     at Connection.<anonymous> (/app/node_modules/mongodb-core/lib/connection/pool.js:280:12)
+item-app  |     at Object.onceWrapper (events.js:520:26)
+item-app  |     at Connection.emit (e...
+item-app  |     at /app/app.js:24:10
+item-app  |     at connectCallback (/app/node_modules/mongodb/lib/mongo_client.js:527:5)
+item-app  |     at /app/node_modules/mongodb/lib/mongo_client.js:418:11
+item-app  |     at processTicksAndRejections (internal/process/task_queues.js:77:11) {
+item-app  |   generatedMessage: true,
+item-app  |   code: 'ERR_ASSERTION',
+item-app  |   actual: null,
+item-app  |   expected: Error [MongoError]: failed to connect to server [item-db:27017] on first connect [Error: connect ECONNREFUSED 172.19.0.3:27017
+item-app  |       at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+item-app  |     name: 'MongoError'
+item-app  |   }]
+item-app  |       at Pool.<anonymous> (/app/node_modules/mongodb-core/lib/topologies/server.js:336:35)
+item-app  |       at Pool.emit (events.js:400:28)
+item-app  |       at Connection.<anonymous> (/app/node_modules/mongodb-core/lib/connection/pool.js:280:12)
+item-app  |       at Object.onceWrapper (events.js:520:26)
+item-app  |       at Connection.emit (events.js:400:28)
+item-app  |       at Socket.<anonymous> (/app/node_modules/mongodb-core/lib/connection/connection.js:189:49)
+item-app  |       at Object.onceWrapper (events.js:520:26)
+item-app  |       at Socket.emit (events.js:400:28)
+item-app  |       at emitErrorNT (internal/streams/destroy.js:106:8)
+item-app  |       at emitErrorCloseNT (internal/streams/destroy.js:74:3),
+item-app  |   operator: '=='
+item-app  | }
+item-app  | npm ERR! code ELIFECYCLE
+item-app  | npm ERR! errno 1
+item-app  | npm ERR! docker-software-delivery@1.0.0 start: `node ./bin/www`
+item-app  | npm ERR! Exit status 1
+item-app  | npm ERR! 
+item-app  | npm ERR! Failed at the docker-software-delivery@1.0.0 start script.
+item-app  | npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+item-app  | 
+item-app  | npm ERR! A complete log of this run can be found in:
+item-app  | npm ERR!     /root/.npm/_logs/2025-03-25T03_05_28_931Z-debug.log
+item-app  | 
+item-app  | > docker-software-delivery@1.0.0 start /app
+item-app  | > node ./bin/www
+item-app  | 
+item-app  | NODE_ENV: production
+item-app  | Connected to database
+item-db   | 2025-03-24T23:49:35.111+0000 I CONTROL  [initandlisten] MongoDB starting : pid=1 port=27017 dbpath=/data/db 64-bit host=4d05401a1e21
+item-db   | 2025-03-24T23:49:35.111+0000 I CONTROL  [initandlisten] db version v3.6.23
+item-db   | 2025-03-24T23:49:35.111+0000 I CONTROL  [initandlisten] git version: d352e6a4764659e0d0350ce77279de3c1f243e5c
+item-db   | 2025-03-24T23:49:35.111+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+item-db   | 2025-03-24T23:49:35.111+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+item-db   | 2025-03-24T23:49:35.111+0000 I CONTROL  [initandlisten] modules: none
+item-db   | 2025-03-24T23:49:35.111+0000 I CONTROL  [initandlisten] build environment:
+item-db   | 2025-03-24T23:49:35.111+0000 I CONTROL  [initandlisten]     distmod: ubuntu1604
+item-db   | 2025-03-24T23:49:35.111+0000 I CONTROL  [initandlisten]     distarch: x86_64
+item-db   | 2025-03-24T23:49:35.111+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+item-db   | 2025-03-24T23:49:35.111+0000 I CONTROL  [initandlisten] options: { net: { bindIpAll: true } }
+item-db   | 2025-03-24T23:49:35.111+0000 I STORAGE  [initandlisten] 
+item-db   | 2025-03-24T23:49:35.111+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+item-db   | 2025-03-24T23:49:35.111+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+item-db   | 2025-03-24T23:49:35.112+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=4405M,cache_overflow=(file_max=0M),session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+item-db   | 2025-03-24T23:49:35.524+0000 I STORAGE  [initandlisten] WiredTiger message [1742860175:524882][1:0x7fb254b5ea40], txn-recover: Set global recovery timestamp: 0
+item-db   | 2025-03-24T23:49:35.563+0000 I CONTROL  [initandlisten] 
+item-db   | 2025-03-24T23:49:35.563+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+item-db   | 2025-03-24T23:49:35.563+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+item-db   | 2025-03-24T23:49:35.563+0000 I CONTROL  [initandlisten] 
+item-db   | 2025-03-24T23:49:35.563+0000 I CONTROL  [initandlisten] 
+item-db   | 2025-03-24T23:49:35.563+0000 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+item-db   | 2025-03-24T23:49:35.563+0000 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+item-db   | 2025-03-24T23:49:35.563+0000 I CONTROL  [initandlisten] 
+item-db   | 2025-03-24T23:49:35.563+0000 I STORAGE  [initandlisten] createCollection: admin.system.version with provided UUID: e2754c46-3b0d-4a93-9806-dcf4188953cf
+item-db   | 2025-03-24T23:49:35.580+0000 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.6
+item-db   | 2025-03-24T23:49:35.580+0000 I STORAGE  [initandlisten] createCollection: local.startup_log with generated UUID: 7323c918-5245-41cd-8492-658560cdb237
+item-db   | 2025-03-24T23:49:35.596+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+item-db   | 2025-03-24T23:49:35.597+0000 I NETWORK  [initandlisten] listening via socket bound to 0.0.0.0
+item-db   | 2025-03-24T23:49:35.597+0000 I STORAGE  [LogicalSessionCacheRefresh] createCollection: config.system.sessions with generated UUID: 56fa3d5e-1eea-4ed1-8a3e-141dc436b193
+item-db   | 2025-03-24T23:49:35.597+0000 I NETWORK  [initandlisten] listening via socket bound to /tmp/mongodb-27017.sock
+item-db   | 2025-03-24T23:49:35.597+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
+item-db   | 2025-03-24T23:49:35.621+0000 I INDEX    [LogicalSessionCacheRefresh] build index on: config.system.sessions properties: { v: 2, key: { lastUse: 1 }, name: "lsidTTLIndex", ns: "config.system.sessions", expireAfterSeconds: 1800 }
+item-db   | 2025-03-24T23:49:35.621+0000 I INDEX    [LogicalSessionCacheRefresh] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+item-db   | 2025-03-24T23:49:35.622+0000 I INDEX    [LogicalSessionCacheRefresh] build index done.  scanned 0 total records. 0 secs
+item-db   | 2025-03-24T23:49:36.123+0000 I NETWORK  [listener] connection accepted from 172.19.0.3:59132 #1 (1 connection now open)
+item-db   | 2025-03-24T23:49:36.130+0000 I NETWORK  [conn1] received client metadata from 172.19.0.3:59132 conn1: { driver: { name: "nodejs", version: "2.2.36" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.15.167.4-microsoft-standard-WSL2" }, platform: "Node.js v14.21.3, LE, mongodb-core: 2.1.20" }
+item-db   | 2025-03-24T23:50:47.120+0000 I NETWORK  [conn1] end connection 172.19.0.3:59132 (0 connections now open)
+item-db   | 2025-03-24T23:50:47.662+0000 I CONTROL  [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+item-db   | 2025-03-24T23:50:47.662+0000 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+item-db   | 2025-03-24T23:50:47.662+0000 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27017.sock
+item-db   | 2025-03-24T23:50:47.662+0000 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+item-db   | 2025-03-24T23:50:47.665+0000 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+item-db   | 2025-03-24T23:50:47.747+0000 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+item-db   | 2025-03-24T23:50:47.747+0000 I CONTROL  [signalProcessingThread] now exiting
+item-db   | 2025-03-24T23:50:47.747+0000 I CONTROL  [signalProcessingThread] shutting down with code:0
+item-db   | 2025-03-24T23:51:26.376+0000 I CONTROL  [initandlisten] MongoDB starting : pid=1 port=27017 dbpath=/data/db 64-bit host=4d05401a1e21
+item-db   | 2025-03-24T23:51:26.376+0000 I CONTROL  [initandlisten] db version v3.6.23
+item-db   | 2025-03-24T23:51:26.376+0000 I CONTROL  [initandlisten] git version: d352e6a4764659e0d0350ce77279de3c1f243e5c
+item-db   | 2025-03-24T23:51:26.376+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+item-db   | 2025-03-24T23:51:26.376+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+item-db   | 2025-03-24T23:51:26.376+0000 I CONTROL  [initandlisten] modules: none
+item-db   | 2025-03-24T23:51:26.376+0000 I CONTROL  [initandlisten] build environment:
+item-db   | 2025-03-24T23:51:26.376+0000 I CONTROL  [initandlisten]     distmod: ubuntu1604
+item-db   | 2025-03-24T23:51:26.376+0000 I CONTROL  [initandlisten]     distarch: x86_64
+item-db   | 2025-03-24T23:51:26.376+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+item-db   | 2025-03-24T23:51:26.376+0000 I CONTROL  [initandlisten] options: { net: { bindIpAll: true } }
+item-db   | 2025-03-24T23:51:26.377+0000 I -        [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+item-db   | 2025-03-24T23:51:26.377+0000 I STORAGE  [initandlisten] 
+item-db   | 2025-03-24T23:51:26.377+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+item-db   | 2025-03-24T23:51:26.377+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+item-db   | 2025-03-24T23:51:26.377+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=4405M,cache_overflow=(file_max=0M),session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+item-db   | 2025-03-24T23:51:26.935+0000 I STORAGE  [initandlisten] WiredTiger message [1742860286:935536][1:0x7f791304fa40], txn-recover: Main recovery loop: starting at 1/22272
+item-db   | 2025-03-24T23:51:27.007+0000 I STORAGE  [initandlisten] WiredTiger message [1742860287:7574][1:0x7f791304fa40], txn-recover: Recovering log 1 through 2
+item-db   | 2025-03-24T23:51:27.048+0000 I STORAGE  [initandlisten] WiredTiger message [1742860287:48793][1:0x7f791304fa40], txn-recover: Recovering log 2 through 2
+item-db   | 2025-03-24T23:51:27.083+0000 I STORAGE  [initandlisten] WiredTiger message [1742860287:83082][1:0x7f791304fa40], txn-recover: Set global recovery timestamp: 0
+item-db   | 2025-03-24T23:51:27.126+0000 I CONTROL  [initandlisten] 
+item-db   | 2025-03-24T23:51:27.126+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+item-db   | 2025-03-24T23:51:27.126+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+item-db   | 2025-03-24T23:51:27.126+0000 I CONTROL  [initandlisten] 
+item-db   | 2025-03-24T23:51:27.126+0000 I CONTROL  [initandlisten] 
+item-db   | 2025-03-24T23:51:27.126+0000 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+item-db   | 2025-03-24T23:51:27.126+0000 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+item-db   | 2025-03-24T23:51:27.126+0000 I CONTROL  [initandlisten] 
+item-db   | 2025-03-24T23:51:27.128+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+item-db   | 2025-03-24T23:51:27.129+0000 I NETWORK  [initandlisten] listening via socket bound to 0.0.0.0
+item-db   | 2025-03-24T23:51:27.129+0000 I NETWORK  [initandlisten] listening via socket bound to /tmp/mongodb-27017.sock
+item-db   | 2025-03-24T23:51:27.129+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
+item-db   | 2025-03-24T23:51:28.120+0000 I NETWORK  [listener] connection accepted from 172.19.0.3:49930 #1 (1 connection now open)
+item-db   | 2025-03-24T23:51:28.125+0000 I NETWORK  [conn1] received client metadata from 172.19.0.3:49930 conn1: { driver: { name: "nodejs", version: "2.2.36" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.15.167.4-microsoft-standard-WSL2" }, platform: "Node.js v14.21.3, LE, mongodb-core: 2.1.20" }
+item-db   | 2025-03-24T23:59:50.765+0000 I STORAGE  [conn1] createCollection: accumulator.documents with generated UUID: 1e853705-8de7-4bac-9643-63a96d638130
+item-db   | 2025-03-25T02:35:34.113+0000 I CONTROL  [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+item-db   | 2025-03-25T02:35:34.123+0000 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+item-db   | 2025-03-25T02:35:34.124+0000 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27017.sock
+item-db   | 2025-03-25T02:35:34.124+0000 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+item-db   | 2025-03-25T02:35:34.127+0000 I NETWORK  [conn1] end connection 172.19.0.3:49930 (0 connections now open)
+item-db   | 2025-03-25T02:35:34.131+0000 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+item-db   | 2025-03-25T02:35:34.221+0000 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+item-db   | 2025-03-25T02:35:34.221+0000 I CONTROL  [signalProcessingThread] now exiting
+item-db   | 2025-03-25T02:35:34.221+0000 I CONTROL  [signalProcessingThread] shutting down with code:0
+item-db   | 2025-03-25T03:05:27.545+0000 I CONTROL  [initandlisten] MongoDB starting : pid=1 port=27017 dbpath=/data/db 64-bit host=4d05401a1e21
+item-db   | 2025-03-25T03:05:27.546+0000 I CONTROL  [initandlisten] db version v3.6.23
+item-db   | 2025-03-25T03:05:27.546+0000 I CONTROL  [initandlisten] git version: d352e6a4764659e0d0350ce77279de3c1f243e5c
+item-db   | 2025-03-25T03:05:27.546+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+item-db   | 2025-03-25T03:05:27.546+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+item-db   | 2025-03-25T03:05:27.546+0000 I CONTROL  [initandlisten] modules: none
+item-db   | 2025-03-25T03:05:27.546+0000 I CONTROL  [initandlisten] build environment:
+item-db   | 2025-03-25T03:05:27.546+0000 I CONTROL  [initandlisten]     distmod: ubuntu1604
+item-db   | 2025-03-25T03:05:27.546+0000 I CONTROL  [initandlisten]     distarch: x86_64
+item-db   | 2025-03-25T03:05:27.546+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+item-db   | 2025-03-25T03:05:27.546+0000 I CONTROL  [initandlisten] options: { net: { bindIpAll: true } }
+item-db   | 2025-03-25T03:05:27.548+0000 I -        [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+item-db   | 2025-03-25T03:05:27.548+0000 I STORAGE  [initandlisten] 
+item-db   | 2025-03-25T03:05:27.548+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+item-db   | 2025-03-25T03:05:27.548+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+item-db   | 2025-03-25T03:05:27.548+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=4405M,cache_overflow=(file_max=0M),session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+item-db   | 2025-03-25T03:05:28.615+0000 I STORAGE  [initandlisten] WiredTiger message [1742871928:615080][1:0x7f0aa4e31a40], txn-recover: Main recovery loop: starting at 2/31360
+item-db   | 2025-03-25T03:05:28.760+0000 I STORAGE  [initandlisten] WiredTiger message [1742871928:760633][1:0x7f0aa4e31a40], txn-recover: Recovering log 2 through 3
+item-db   | 2025-03-25T03:05:28.842+0000 I STORAGE  [initandlisten] WiredTiger message [1742871928:842720][1:0x7f0aa4e31a40], txn-recover: Recovering log 3 through 3
+item-db   | 2025-03-25T03:05:28.912+0000 I STORAGE  [initandlisten] WiredTiger message [1742871928:912680][1:0x7f0aa4e31a40], txn-recover: Set global recovery timestamp: 0
+item-db   | 2025-03-25T03:05:28.946+0000 I CONTROL  [initandlisten] 
+item-db   | 2025-03-25T03:05:28.946+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+item-db   | 2025-03-25T03:05:28.946+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+item-db   | 2025-03-25T03:05:28.946+0000 I CONTROL  [initandlisten] 
+item-db   | 2025-03-25T03:05:28.946+0000 I CONTROL  [initandlisten] 
+item-db   | 2025-03-25T03:05:28.946+0000 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+item-db   | 2025-03-25T03:05:28.946+0000 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+item-db   | 2025-03-25T03:05:28.946+0000 I CONTROL  [initandlisten] 
+item-db   | 2025-03-25T03:05:28.963+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+item-db   | 2025-03-25T03:05:28.964+0000 I NETWORK  [initandlisten] listening via socket bound to 0.0.0.0
+item-db   | 2025-03-25T03:05:28.964+0000 I NETWORK  [initandlisten] listening via socket bound to /tmp/mongodb-27017.sock
+item-db   | 2025-03-25T03:05:28.964+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
+item-db   | 2025-03-25T03:05:30.895+0000 I NETWORK  [listener] connection accepted from 172.19.0.2:44950 #1 (1 connection now open)
+item-db   | 2025-03-25T03:05:30.900+0000 I NETWORK  [conn1] received client metadata from 172.19.0.2:44950 conn1: { driver: { name: "nodejs", version: "2.2.36" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.15.167.4-microsoft-standard-WSL2" }, platform: "Node.js v14.21.3, LE, mongodb-core: 2.1.20" }
