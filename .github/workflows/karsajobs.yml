@@ -1,0 +1,71 @@
+name: Karsa Jobs Backend CI
+
+on:
+  push:
+    branches:
+      - karsajobs
+
+  pull_request:
+    branches:
+      - karsajobs
+
+jobs:
+
+  lint-dockerfile:
+    name: lint-dockerfile
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v4
+
+      - name: Install Hadolint
+        run: |
+          wget -O hadolint \
+            https://github.com/hadolint/hadolint/releases/latest/download/hadolint-Linux-x86_64
+          chmod +x hadolint
+          sudo mv hadolint /usr/local/bin/hadolint
+
+      - name: Lint Dockerfile
+        run: hadolint Dockerfile
+
+  test-app:
+    name: test-app
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v4
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: stable
+
+      - name: Run unit tests
+        run: go test -v -short --count=1 $(go list ./...)
+
+  build-app-karsajobs:
+    name: build-app-karsajobs
+    runs-on: ubuntu-latest
+
+    needs:
+      - lint-dockerfile
+      - test-app
+
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v4
+
+      - name: Login to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Build and push image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: true
+          tags: ${{ secrets.DOCKER_USERNAME }}/karsajobs:latest
