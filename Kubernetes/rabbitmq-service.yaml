@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: rabbitmq
+  namespace: ecommerce
+spec:
+  selector:
+    app: rabbitmq
+  ports:
+    - name: tcp-amqp
+      protocol: TCP
+      appProtocol: tcp
+      port: 5672
+      targetPort: 5672
+    - name: http-management
+      protocol: TCP
+      appProtocol: http
+      port: 15672
+      targetPort: 15672
+  type: ClusterIP

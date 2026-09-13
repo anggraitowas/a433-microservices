@@ -1,0 +1,19 @@
+apiVersion: networking.istio.io/v1
+kind: VirtualService
+metadata:
+  name: ecommerce-virtual-service
+  namespace: ecommerce
+spec:
+  hosts:
+    - "*"
+  gateways:
+    - ecommerce-gateway
+  http:
+    - match:
+        - uri:
+            exact: /order
+      route:
+        - destination:
+            host: order-service
+            port:
+              number: 3000

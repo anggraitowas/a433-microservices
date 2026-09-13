@@ -1,0 +1,3 @@
+GHCR
+https://ghcr.io/anggraitowas/order-service
+https://ghcr.io/anggraitowas/shipping-service
